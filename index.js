@@ -1,10 +1,10 @@
 if (config.runsInWidget) {
     let widget = await createWidget();
     Script.setWidget(widget);
-    Script.complete();
-} else {
-    Safari.open(`data:text/plain,${ await getPrice() }`)
-}
+} else
+    WebView.loadHTML(`<h1 align="center">${ await getPrice() }</h1>`);
+
+Script.complete();
 
 
 
