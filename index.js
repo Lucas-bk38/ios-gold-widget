@@ -2,7 +2,7 @@ if (config.runsInWidget) {
     let widget = await createWidget();
     Script.setWidget(widget);
 } else
-    WebView.loadHTML(`<h1 align="center">${ await getPrice() }</h1>`);
+    WebView.loadHTML(`<h1 align="center">${ await getPrice() }</h1>`, null, new Size(0, 100));
 
 Script.complete();
 
