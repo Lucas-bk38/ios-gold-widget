@@ -8,6 +8,7 @@ function createWidget() {
     const w = new ListWidget()
     w.backgroundColor = new Color('#b00a0f');
     w.addText('item.title');
+    w.centerAlignContent();
 
     return w;
 }
